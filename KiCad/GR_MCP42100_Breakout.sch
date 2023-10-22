@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+LIBS:GR_MCP42100_Breakout-cache
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "MCP42100 Breakout"
+Date "2023-10-22"
+Rev "1"
+Comp "Gadget Reboot"
+Comment1 "https://www.youtube.com/gadgetreboot"
+Comment2 "https://github.com/GadgetReboot/MCP42100_Breakout"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small_US R2
+U 1 1 60C1BA7F
+P 4840 3210
+F 0 "R2" H 4990 3235 50  0000 R CNN
+F 1 "10K" H 5040 3160 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4840 3210 50  0001 C CNN
+F 3 "~" H 4840 3210 50  0001 C CNN
+	1    4840 3210
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR08
+U 1 1 60C2034A
+P 5570 4385
+F 0 "#PWR08" H 5570 4135 50  0001 C CNN
+F 1 "GNDREF" H 5820 4110 50  0001 C CNN
+F 2 "" H 5570 4385 50  0001 C CNN
+F 3 "" H 5570 4385 50  0001 C CNN
+	1    5570 4385
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5570 3235 5570 3310
+Wire Wire Line
+	5570 4310 5570 4385
+$Comp
+L power:VCC #PWR06
+U 1 1 626B9F51
+P 5570 3235
+F 0 "#PWR06" H 5570 3085 50  0001 C CNN
+F 1 "VCC" H 5587 3408 50  0000 C CNN
+F 2 "" H 5570 3235 50  0001 C CNN
+F 3 "" H 5570 3235 50  0001 C CNN
+	1    5570 3235
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 63DC99A3
+P 5170 3015
+F 0 "C1" H 5245 3040 50  0000 L CNN
+F 1 "100nF" H 5245 2940 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5170 3015 50  0001 C CNN
+F 3 "~" H 5170 3015 50  0001 C CNN
+	1    5170 3015
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR05
+U 1 1 63DC99AD
+P 5170 3140
+F 0 "#PWR05" H 5170 2890 50  0001 C CNN
+F 1 "GNDREF" H 5420 2865 50  0001 C CNN
+F 2 "" H 5170 3140 50  0001 C CNN
+F 3 "" H 5170 3140 50  0001 C CNN
+	1    5170 3140
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5170 3140 5170 3115
+Wire Wire Line
+	5170 2915 5170 2890
+$Comp
+L power:VCC #PWR01
+U 1 1 63DC99C3
+P 5170 2890
+F 0 "#PWR01" H 5170 2740 50  0001 C CNN
+F 1 "VCC" H 5187 3063 50  0000 C CNN
+F 2 "" H 5170 2890 50  0001 C CNN
+F 3 "" H 5170 2890 50  0001 C CNN
+	1    5170 2890
+	1    0    0    -1  
+$EndComp
+$Comp
+L Potentiometer_Digital:MCP42100 U1
+U 1 1 6521A53A
+P 5570 3810
+F 0 "U1" H 5830 4260 50  0000 C CNN
+F 1 "MCP42100" H 5850 3330 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5570 3910 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf" H 5570 3910 50  0001 C CNN
+	1    5570 3810
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 652279DB
+P 4840 3070
+F 0 "#PWR04" H 4840 2920 50  0001 C CNN
+F 1 "VCC" H 4857 3243 50  0000 C CNN
+F 2 "" H 4840 3070 50  0001 C CNN
+F 3 "" H 4840 3070 50  0001 C CNN
+	1    4840 3070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4840 3110 4840 3070
+$Comp
+L Device:R_Small_US R1
+U 1 1 65229862
+P 4600 3210
+F 0 "R1" H 4750 3235 50  0000 R CNN
+F 1 "10K" H 4800 3160 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4600 3210 50  0001 C CNN
+F 3 "~" H 4600 3210 50  0001 C CNN
+	1    4600 3210
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 6522986C
+P 4600 3070
+F 0 "#PWR03" H 4600 2920 50  0001 C CNN
+F 1 "VCC" H 4617 3243 50  0000 C CNN
+F 2 "" H 4600 3070 50  0001 C CNN
+F 3 "" H 4600 3070 50  0001 C CNN
+	1    4600 3070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3110 4600 3070
+$Comp
+L Connector_Generic:Conn_01x06 J2
+U 1 1 6522FCB6
+P 6710 3710
+F 0 "J2" H 6670 3300 50  0000 L CNN
+F 1 "Conn_01x06" H 6790 3611 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6710 3710 50  0001 C CNN
+F 3 "~" H 6710 3710 50  0001 C CNN
+	1    6710 3710
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 65230E45
+P 3900 3710
+F 0 "J1" H 3900 3200 50  0000 C CNN
+F 1 "Conn_01x08" H 3818 4136 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3900 3710 50  0001 C CNN
+F 3 "~" H 3900 3710 50  0001 C CNN
+	1    3900 3710
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5070 3510 4100 3510
+Wire Wire Line
+	5070 3610 4100 3610
+Wire Wire Line
+	5070 3710 4100 3710
+Wire Wire Line
+	5070 3810 4100 3810
+Wire Wire Line
+	4490 4110 4490 4010
+Wire Wire Line
+	4490 4010 4100 4010
+Wire Wire Line
+	4490 4110 4840 4110
+Wire Wire Line
+	4600 4010 5070 4010
+Wire Wire Line
+	4840 3310 4840 4110
+Connection ~ 4840 4110
+Wire Wire Line
+	4840 4110 5070 4110
+Wire Wire Line
+	4100 3910 4600 3910
+Connection ~ 4600 3910
+Wire Wire Line
+	4600 3910 4600 4010
+Wire Wire Line
+	4600 3310 4600 3910
+$Comp
+L power:VCC #PWR02
+U 1 1 6525B938
+P 4110 3070
+F 0 "#PWR02" H 4110 2920 50  0001 C CNN
+F 1 "VCC" H 4127 3243 50  0000 C CNN
+F 2 "" H 4110 3070 50  0001 C CNN
+F 3 "" H 4110 3070 50  0001 C CNN
+	1    4110 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR07
+U 1 1 6525BFEC
+P 4120 4180
+F 0 "#PWR07" H 4120 3930 50  0001 C CNN
+F 1 "GNDREF" H 4370 3905 50  0001 C CNN
+F 2 "" H 4120 4180 50  0001 C CNN
+F 3 "" H 4120 4180 50  0001 C CNN
+	1    4120 4180
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4110 4120 4110
+Wire Wire Line
+	4120 4110 4120 4180
+Wire Wire Line
+	4100 3410 4110 3410
+Wire Wire Line
+	4110 3410 4110 3070
+Wire Wire Line
+	6510 3610 6070 3610
+Wire Wire Line
+	6070 3910 6110 3910
+Wire Wire Line
+	6110 3910 6110 3810
+Wire Wire Line
+	6070 4010 6180 4010
+Wire Wire Line
+	6180 4010 6180 3910
+Wire Wire Line
+	6180 3910 6510 3910
+Wire Wire Line
+	6070 4110 6250 4110
+Wire Wire Line
+	6250 4110 6250 4010
+Wire Wire Line
+	6250 4010 6510 4010
+Text Label 6350 3610 0    50   ~ 0
+PW0
+Text Label 6350 3810 0    50   ~ 0
+PA1
+Text Label 6350 3910 0    50   ~ 0
+PW1
+Wire Wire Line
+	6110 3810 6510 3810
+Text Label 6350 4010 0    50   ~ 0
+PB1
+Text Label 4150 3510 0    50   ~ 0
+SCK
+Text Label 4150 3610 0    50   ~ 0
+SI
+Text Label 4150 3710 0    50   ~ 0
+SO
+Text Label 4150 3810 0    50   ~ 0
+~CS
+Text Label 4150 3910 0    50   ~ 0
+~RS
+Text Label 4150 4010 0    50   ~ 0
+~SHDN
+Wire Wire Line
+	6070 3710 6510 3710
+Wire Wire Line
+	6070 3510 6510 3510
+Text Label 6350 3710 0    50   ~ 0
+PB0
+Text Label 6350 3510 0    50   ~ 0
+PA0
+$EndSCHEMATC

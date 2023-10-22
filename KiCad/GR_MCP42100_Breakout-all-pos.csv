@@ -1,0 +1,7 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C1","100nF","C_0805_2012Metric_Pad1.15x1.40mm_HandSolder",4.886000,10.893000,180.000000,top
+"J1","Conn_01x08","PinHeader_1x08_P2.54mm_Vertical",2.551000,1.593000,90.000000,top
+"J2","Conn_01x06","PinHeader_1x06_P2.54mm_Vertical",7.641000,16.843000,90.000000,top
+"R1","10K","R_0805_2012Metric_Pad1.15x1.40mm_HandSolder",3.686000,8.693000,180.000000,top
+"R2","10K","R_0805_2012Metric_Pad1.15x1.40mm_HandSolder",3.686000,6.793000,180.000000,top
+"U1","MCP42100","SOIC-14_3.9x8.7mm_P1.27mm",11.811000,8.393000,90.000000,top
